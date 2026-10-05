@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Marketing House | Digital Growth & Marketing Services</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Apex Marketing House helps e-commerce brands, businesses and creators grow through e-commerce solutions, marketplace SEO, lead generation, social media growth and performance marketing.">
+    <meta name="keywords" content="Apex Marketing House, Performance Marketing, Meta Ads, Google Ads, E-commerce Dropshipping, Marketplace SEO, Lead Generation, Social Media Growth">
+    <meta name="author" content="Apex Marketing House">
+    
+    <!-- OpenGraph & Social Cards -->
+    <meta property="og:title" content="Apex Marketing House | Digital Growth & Marketing Services">
+    <meta property="og:description" content="Turn your marketing into measurable business revenue. 40,000+ leads generated and up to 14.3x ROAS on performance campaigns.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/png" href="favicon-ig.png">
+    <link rel="apple-touch-icon" href="logo-ig.png">
+    <meta property="og:image" content="logo-ig.png">
+    
+    <!-- Design System Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=3.7">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "Apex Marketing House",
+      "description": "Apex Marketing House helps e-commerce brands, businesses and creators grow through e-commerce solutions, marketplace SEO, lead generation, social media growth and performance marketing.",
+      "telephone": "+918804574048"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ==============================================================================
+         GLOBAL HEADER & NAVIGATION (Glassmorphism + Mobile Menu)
+         ============================================================================== -->
+    <header class="site-nav">
+        <div class="container nav-wrapper">
+            <div class="nav-brand" onclick="navigateTo('home')" role="button" aria-label="Apex Marketing House Home">
+                <div class="brand-icon-box">
+                    <img src="logo-ig.png" alt="Apex Marketing House Logo" class="brand-logo-img">
+                </div>
+                <span class="brand-title">Apex <span>Marketing House</span></span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="#home" onclick="navigateTo('home')" class="nav-link">Home</a>
+                
+                <!-- Services Dropdown (All 6 Services) -->
+                <div class="nav-dropdown-wrapper">
+                    <button class="nav-dropdown-trigger" aria-haspopup="true">
+                        Services
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="#ecommerce" onclick="navigateTo('ecommerce', 'core-ecommerce')" class="dropdown-item">
+                            <span style="color:var(--color-ecommerce);">🛒</span> E-commerce / Dropshipping
+                        </a>
+                        <a href="#ecom-web" onclick="navigateTo('ecom-web', 'core-ecom-web')" class="dropdown-item">
+                            <span style="color:var(--color-ecom-web);">💻</span> Ecommerce Website Development
+                        </a>
+                        <a href="#seo" onclick="navigateTo('seo', 'core-seo')" class="dropdown-item">
+                            <span style="color:var(--color-seo);">🔍</span> SEO
+                        </a>
+                        <a href="#leadgen" onclick="navigateTo('leadgen', 'core-leadgen')" class="dropdown-item">
+                            <span style="color:var(--color-leadgen);">🎯</span> Lead Generation
+                        </a>
+                        <a href="#social" onclick="navigateTo('social', 'core-social')" class="dropdown-item">
+                            <span style="color:var(--color-social);">📱</span> Social Media
+                        </a>
+                        <a href="#performance" onclick="navigateTo('performance', 'core-performance')" class="dropdown-item">
+                            <span style="color:var(--color-performance);">⚡</span> Performance Marketing
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#how-we-work" onclick="navigateTo('home', 'how-we-work')" class="nav-link">How We Work</a>
+                <a href="#results" onclick="navigateTo('home', 'results')" class="nav-link">Results</a>
+                <a href="#why-us" onclick="navigateTo('home', 'why-us')" class="nav-link">Why Us</a>
+                <a href="#who-we-are" onclick="navigateTo('home', 'who-we-are')" class="nav-link">About Us</a>
+                <a href="#proposal-section" onclick="navigateTo('home', 'proposal-section')" class="btn-nav-cta">Get Free Proposal</a>
+            </nav>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" onclick="closeMobileDrawer(true)"></div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <a href="#home" onclick="handleMobileNav('home')">Home</a>
+        <a href="#services" onclick="handleMobileNav('home', 'services')">Services</a>
+        <a href="#how-we-work" onclick="handleMobileNav('home', 'how-we-work')">How We Work</a>
+        <a href="#results" onclick="handleMobileNav('home', 'results')">Results</a>
+        <a href="#why-us" onclick="handleMobileNav('home', 'why-us')">Why Us</a>
+        <a href="#who-we-are" onclick="handleMobileNav('home', 'who-we-are')">About Us</a>
+        <a href="#faq" onclick="handleMobileNav('home', 'faq')">FAQ</a>
+        <a href="#proposal-section" onclick="handleMobileNav('home', 'proposal-section')">Get Free Proposal &rarr;</a>
+    </div>
+
+    <!-- ==============================================================================
+         MAIN APPLICATION VIEWPORT
+         ============================================================================== -->
+    <main id="app-viewport">
+
+        <!-- ==========================================================================
+             VIEW: HOME PAGE
+             ========================================================================== -->
+        <div id="page-home" class="page-section page-view active">
+            
+            <!-- 01. HERO SECTION (Original Restored Content) -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-grid">
+                        <div class="hero-content">
+                            <span class="section-badge">Growth & Performance Agency</span>
+                            <h1>
+                                Turn Your Marketing Into <br />
+                                <span class="text-gradient">Measurable Business Growth</span>
+                            </h1>
+                            <p class="hero-description">
+                                We help e-commerce brands, businesses and creators grow through e-commerce solutions, marketplace SEO, lead generation, social media growth and performance marketing.
+                            </p>
+                            <div class="hero-tags-wrapper">
+                                <span class="hero-tag-item"><span class="hero-tag-icon">✓</span> E-commerce</span>
+                                <span class="hero-tag-item"><span class="hero-tag-icon">✓</span> SEO</span>
+                                <span class="hero-tag-item"><span class="hero-tag-icon">✓</span> Lead Generation</span>
+                                <span class="hero-tag-item"><span class="hero-tag-icon">✓</span> Social Media</span>
+                                <span class="hero-tag-item"><span class="hero-tag-icon">✓</span> Performance</span>
+                            </div>
+                        </div>
+
+                        <!-- Hero Quick Lead Form Card -->
+                        <div class="hero-form-card">
+                            <div class="hero-form-header">
+                                <h3>Get A Free Growth Plan</h3>
+                                <p>No commitment required. We will audit your roadmap.</p>
+                            </div>
+                            
+                            <form id="hero-quick-form" onsubmit="handleLeadFormSubmit(event, this, document.getElementById('hero-form-feedback'), 'hero_quick_form')">
+                                <input type="text" name="hp_website" class="hp-field" tabindex="-1" autocomplete="off">
+                                
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Email Address" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" placeholder="Phone Number" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <select name="service" required class="form-select">
+                                        <option value="" disabled selected>Select Primary Interest</option>
+                                        <option value="ecommerce">E-commerce / Dropshipping</option>
+                                        <option value="ecom-web">Ecommerce Website Development</option>
+                                        <option value="seo">SEO</option>
+                                        <option value="leadgen">Lead Generation</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="performance">Performance Marketing</option>
+                                    </select>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit-hero">
+                                    Send Request &rarr;
+                                </button>
+                                
+                                <div id="hero-form-feedback" class="form-feedback-text">
+                                    🔒 Your information is confidential.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 02. BUSINESS OUTCOMES STRIP -->
+            <section class="outcomes-strip">
+                <div class="container">
+                    <div class="outcomes-grid">
+                        <div class="outcome-item">
+                            <div class="outcome-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-6"></path></svg>
+                            </div>
+                            <h4 class="outcome-title">More Sales</h4>
+                            <p class="outcome-subtitle">Direct ROI focus</p>
+                        </div>
+                        <div class="outcome-item">
+                            <div class="outcome-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+                            </div>
+                            <h4 class="outcome-title">Strategic Leads</h4>
+                            <p class="outcome-subtitle">Quality over quantity</p>
+                        </div>
+                        <div class="outcome-item">
+                            <div class="outcome-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+                            </div>
+                            <h4 class="outcome-title">Continuous Optimization</h4>
+                            <p class="outcome-subtitle">Daily refinements</p>
+                        </div>
+                        <div class="outcome-item">
+                            <div class="outcome-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h4 class="outcome-title">Brand Authority</h4>
+                            <p class="outcome-subtitle">Trusted market presence</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 03. "WHAT ARE YOU TRYING TO SOLVE?" SECTION (Original Restored Content) -->
+            <section class="section-padding solve-section">
+                <div class="container">
+                    <h2 class="section-title" style="text-align:center;">What are you trying to solve?</h2>
+
+                    <div class="solve-grid">
+                        <!-- Problem 1: E-commerce -->
+                        <div id="solve-ecommerce" class="solve-card solve-card--ecommerce" onclick="navigateTo('ecommerce')">
+                            <div>
+                                <div class="solve-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                                </div>
+                                <h3>I want more sales online.</h3>
+                                <p>Build converting pipelines, run shopping ads, and retarget abandoned carts effectively.</p>
+                            </div>
+                            <div class="solve-card-cta">
+                                Explore E-commerce Solutions <span>&rarr;</span>
+                            </div>
+                        </div>
+
+                        <!-- Problem 2: Lead Gen -->
+                        <div id="solve-leadgen" class="solve-card solve-card--leadgen" onclick="navigateTo('leadgen')">
+                            <div>
+                                <div class="solve-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                </div>
+                                <h3>I want qualified leads.</h3>
+                                <p>Fill your pipeline with prospects actively looking for your specific service or product.</p>
+                            </div>
+                            <div class="solve-card-cta">
+                                Explore Lead Generation <span>&rarr;</span>
+                            </div>
+                        </div>
+
+                        <!-- Problem 3: Performance -->
+                        <div id="solve-performance" class="solve-card solve-card--performance" onclick="navigateTo('performance')">
+                            <div>
+                                <div class="solve-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+                                </div>
+                                <h3>I want a higher ROI.</h3>
+                                <p>Stop wasting budget. Optimize campaigns based on hard data and precise targeting.</p>
+                            </div>
+                            <div class="solve-card-cta">
+                                Explore Performance Ads <span>&rarr;</span>
+                            </div>
+                        </div>
+
+                        <!-- Problem 4: SEO -->
+                        <div id="solve-seo" class="solve-card solve-card--seo" onclick="navigateTo('seo')">
+                            <div>
+                                <div class="solve-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3>I want organic traffic.</h3>
+                                <p>Rank higher in search results and capture high-intent users without paying per click.</p>
+                            </div>
+                            <div class="solve-card-cta">
+                                Explore SEO Solutions <span>&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 04. 6 CORE SERVICES OVERVIEW SECTION (WITH ECOMMERCE WEB DEV PLACED SECOND!) -->
+            <section id="services" class="section-padding services-overview-section">
+                <div class="container">
+                    <div style="text-align:center;">
+                        <span class="section-badge">Our Expertise</span>
+                        <h2 class="section-title">Choose The Right Growth Solution</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        
+                        <!-- 1. E-commerce / Dropshipping -->
+                        <div id="core-ecommerce" class="service-card service-card--ecom" onclick="navigateTo('ecommerce')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                                </div>
+                                <h3>E-commerce / Dropshipping</h3>
+                                <p>Build, launch, and grow your online store with Shopify, product research, SEO listings, creatives, and sales advertising.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore E-commerce Solutions &rarr;
+                            </div>
+                        </div>
+
+                        <!-- 2. Ecommerce Website Development (PLACED SECOND AS REQUESTED!) -->
+                        <div id="core-ecom-web" class="service-card service-card--ecom-web" onclick="navigateTo('ecom-web')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                </div>
+                                <h3>Ecommerce Website Development</h3>
+                                <p>Custom Shopify store design, mobile-first optimization, fast checkout setup, and conversion-focused architectures.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore Website Development &rarr;
+                            </div>
+                        </div>
+
+                        <!-- 3. SEO -->
+                        <div id="core-seo" class="service-card service-card--seo" onclick="navigateTo('seo')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                                <h3>SEO</h3>
+                                <p>Improve product visibility and reach high-intent buyers across your website and major e-commerce marketplaces.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore SEO Solutions &rarr;
+                            </div>
+                        </div>
+
+                        <!-- 4. Lead Generation -->
+                        <div id="core-leadgen" class="service-card service-card--lead" onclick="navigateTo('leadgen')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                </div>
+                                <h3>Lead Generation</h3>
+                                <p>Generate targeted, high-intent enquiries through the channels that fit your business and sales process.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore Lead Gen Solutions &rarr;
+                            </div>
+                        </div>
+
+                        <!-- 5. Social Media -->
+                        <div id="core-social" class="service-card service-card--social" onclick="navigateTo('social')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </div>
+                                <h3>Social Media</h3>
+                                <p>Build an active social presence through engagement, content strategy, and consistent account growth.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore Social Media Solutions &rarr;
+                            </div>
+                        </div>
+
+                        <!-- 6. Performance Marketing -->
+                        <div id="core-performance" class="service-card service-card--perf" onclick="navigateTo('performance')">
+                            <div>
+                                <div class="service-card-icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+                                </div>
+                                <h3>Performance Marketing</h3>
+                                <p>Run measurable advertising campaigns across the platforms that match your sales, lead, or growth objective.</p>
+                            </div>
+                            <div class="service-explore-link">
+                                Explore Performance Solutions &rarr;
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 05. MID-PAGE NOT SURE BANNER (Original Restored Content) -->
+                    <div class="not-sure-banner">
+                        <div class="not-sure-left">
+                            <div class="not-sure-icon-box">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            </div>
+                            <div>
+                                <h3>Not Sure Which Service You Need?</h3>
+                                <p>Tell us your current bottlenecks, and we'll craft the right roadmap.</p>
+                            </div>
+                        </div>
+                        <a href="#proposal-section" onclick="navigateTo('home', 'proposal-section')" class="btn-not-sure-cta">
+                            Talk to an Expert
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 06. HOW WE WORK (Original Restored Content) -->
+            <section id="how-we-work" class="section-padding process-section">
+                <div class="container">
+                    <div style="text-align:center;">
+                        <span class="section-badge">The Process</span>
+                        <h2 class="section-title">From Problem To Performance</h2>
+                    </div>
+
+                    <div class="process-grid">
+                        <div class="process-step-card">
+                            <div class="process-number-circle">01</div>
+                            <h4>Discovery</h4>
+                            <p>We audit your current business, target audience, and current bottlenecks.</p>
+                        </div>
+                        <div class="process-step-card">
+                            <div class="process-number-circle">02</div>
+                            <h4>Strategy</h4>
+                            <p>We craft a custom roadmap tailored to build the right systems.</p>
+                        </div>
+                        <div class="process-step-card">
+                            <div class="process-number-circle">03</div>
+                            <h4>Execute</h4>
+                            <p>The strategy is set into action. Creative, campaigns, and optimizations launch.</p>
+                        </div>
+                        <div class="process-step-card">
+                            <div class="process-number-circle">04</div>
+                            <h4>Measure</h4>
+                            <p>We track performance daily to iterate and scale what is working.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 07. CUSTOMER EXPERIENCE REVIEW CAROUSEL -->
+            <section class="section-padding reviews-section">
+                <div class="container">
+                    <div class="reviews-header-row">
+                        <div>
+                            <span class="section-badge">Real Feedback</span>
+                            <h2 class="section-title" style="margin-bottom:0.35rem;">Customer Experience</h2>
+                            <p class="section-subtitle" style="margin:0; font-size:0.92rem; color:var(--text-muted);">
+                                Verified reviews from business founders and brand leaders across our core growth services.
+                            </p>
+                        </div>
+                        <div class="reviews-carousel-nav">
+                            <span class="reviews-counter-pill" id="reviews-counter">Reviews 1 – 4 of 12</span>
+                            <button id="reviews-prev-btn" class="reviews-arrow-btn" onclick="scrollReviewsTrack('left')" aria-label="Previous Reviews">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            </button>
+                            <button id="reviews-next-btn" class="reviews-arrow-btn" onclick="scrollReviewsTrack('right')" aria-label="Next Reviews">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 12 Review Slots: 6 Active Testimonial Cards + 6 Empty Slots -->
+                    <div class="reviews-carousel-track">
+                        
+                        <!-- Review Card 1: Social Media Growth & High Engagement (5.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★★</span>
+                                        <span class="rating-num">5.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Their reel hooks, creator frameworks, and organic engagement strategies completely transformed our social media. Our engagement rate surged by 340%, gained 46,000+ targeted followers, and turned our Instagram DMs into a consistent revenue channel."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Karan Malhotra</div>
+                                    <div class="review-client-domain">Beauty &amp; Lifestyle Accessories</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--social">📱 +340% Engagement</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 2: E-commerce Website Development & CRO (4.5 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-half">★</span></span>
+                                        <span class="rating-num">4.5</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Apex redesigned our Shopify storefront with high-speed mobile optimization and an intuitive 1-page checkout flow. Our store conversion rate jumped from 1.4% to 3.8% within two weeks, cutting abandoned carts dramatically."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Rohit Verma</div>
+                                    <div class="review-client-domain">D2C Fashion &amp; Apparel</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--ecom">🛒 3.8% Conversion Rate</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 3: High-Intent B2B Lead Generation (4.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-empty">★</span></span>
+                                        <span class="rating-num">4.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Generated over 3,200+ qualified B2B inquiries for our advisory practice at under ₹32 per lead. Setting up strict pre-qualification filters eliminated junk calls and handed our sales team ready-to-close discovery meetings."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Vikram Singhania</div>
+                                    <div class="review-client-domain">B2B Consulting &amp; Corporate Services</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--lead">⚡ 3,200+ Leads (₹32 CPL)</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 4: Performance Marketing - Meta & Google Ads (5.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★★</span>
+                                        <span class="rating-num">5.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "We were struggling with creative ad fatigue and high customer acquisition costs. Niraj's team restructured our full Meta catalog ads and scaled campaigns to an 11.4x peak ROAS during our festive collection launch."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Sneha Kapoor</div>
+                                    <div class="review-client-domain">Home Decor &amp; Luxury Living</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--perf">🎯 11.4x Peak ROAS</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 5: Global E-commerce & Dropshipping (4.5 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-half">★</span></span>
+                                        <span class="rating-num">4.5</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Their rapid product testing matrix and agile creative deployment helped us validate winning products in record time. We scaled to 180+ daily international orders with disciplined ad spend and healthy net margins."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Arjun Mehta</div>
+                                    <div class="review-client-domain">Global E-commerce &amp; Dropshipping</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--scale">📦 180+ Daily Orders</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 6: SEO on E-commerce & Google Ranking (3.5 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★<span class="star-half">★</span><span class="star-empty">★</span></span>
+                                        <span class="rating-num">3.5</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Initial onboarding communication had a slight delay, but their technical e-commerce SEO delivered great results. Product schema and Google indexing fixes got our top categories ranking on Page 1, lifting organic traffic by 42%."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Pooja Iyer</div>
+                                    <div class="review-client-domain">Health, Wellness &amp; Organic Supplements</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--seo">📈 Page 1 Google SEO</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 7: Google Search Ads & High-Intent Conversion (4.5 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-half">★</span></span>
+                                        <span class="rating-num">4.5</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Apex overhauled our Google Ads search campaigns and high-intent keyword bids. We cut our wasted spend by 38% and saw a 3.4x spike in direct website checkouts within the first month of launch."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Devendra Patel</div>
+                                    <div class="review-client-domain">Consumer Tech &amp; Smart Gadgets</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--perf">🎯 -38% Ad Spend Waste</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 8: Social Media Community & Engagement Surge (5.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★★</span>
+                                        <span class="rating-num">5.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Our food brand was completely stagnant on Instagram. Apex introduced interactive story polls, recipe reels, and creator collabs that drove 52,000 profile visits and doubled our repeat subscriber orders."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Ananya Deshmukh</div>
+                                    <div class="review-client-domain">Gourmet Food &amp; Beverage D2C</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--social">🔥 +210% Repeat Orders</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 9: High-Ticket Lead Generation & Funnel CRO (4.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-empty">★</span></span>
+                                        <span class="rating-num">4.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Running lead forms for luxury properties was giving us low-intent inquiries. Their dynamic quiz funnel and automated WhatsApp verification increased our lead-to-site-visit ratio from 8% to 29%."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Rajesh Nair</div>
+                                    <div class="review-client-domain">Real Estate &amp; Luxury Property Advisory</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--lead">🏢 29% Visit Conversion</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 10: E-commerce Marketplace & Technical SEO (3.5 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★<span class="star-half">★</span><span class="star-empty">★</span></span>
+                                        <span class="rating-num">3.5</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Took roughly three weeks to see initial movement on Google SERPs, but the technical audit resolved deep crawl errors and meta canonical tags. Our organic search impressions grew 65% by month two."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Varun Sharma</div>
+                                    <div class="review-client-domain">Fitness Equipment &amp; Activewear</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--seo">🔍 +65% Search Visibility</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 11: High-Converting E-commerce Shopify Redesign (4.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★<span class="star-empty">★</span></span>
+                                        <span class="rating-num">4.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Transformed our slow, clunky legacy site into a modern, mobile-first Shopify flagship. Page load speeds dropped below 1.8s and our average order value climbed noticeably thanks to smart upsell bundles."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Meera Chawla</div>
+                                    <div class="review-client-domain">Jewelry &amp; Handcrafted Goods</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--ecom">⚡ 1.8s Fast Load Time</span>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 12: Full-Funnel Performance Scaling (5.0 Stars) -->
+                        <div class="review-card-active">
+                            <div>
+                                <div class="review-card-header">
+                                    <div class="review-stars">
+                                        <span class="star-group">★★★★★</span>
+                                        <span class="rating-num">5.0</span>
+                                    </div>
+                                    <span class="review-verified-tag">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Client
+                                    </span>
+                                </div>
+                                <p class="review-quote-text">
+                                    "Apex manages our paid acquisition across LinkedIn and Meta. They helped us lower demo signup CPA from ₹1,400 to ₹580 while maintaining enterprise lead quality. Reliable and deeply data-driven team."
+                                </p>
+                            </div>
+                            <div class="review-card-footer">
+                                <div>
+                                    <div class="review-client-name">Siddharth Roy</div>
+                                    <div class="review-client-domain">SaaS &amp; B2B Software Solutions</div>
+                                </div>
+                                <span class="review-metric-pill review-metric-pill--perf">💼 58% Lower CPA</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 08. REVAMPED: RESULTS THAT SHOW THE WORK (REAL META ADS DASHBOARD DATA) -->
+            <section id="results" class="section-padding results-showroom-section">
+                <div class="container">
+                    <div style="text-align:center;">
+                        <span class="section-badge" style="background:rgba(225,48,108,0.2); color:#fbcfe8; border:1px solid rgba(225,48,108,0.3);">
+                            Verified Ads Manager Performance
+                        </span>
+                        <h2 class="section-title">Results That Show The Work</h2>
+                        <p class="section-subtitle" style="color:#94a3b8;">
+                            Real numbers from our active Meta Ads dashboards. We engineer pipelines that generate verified revenue and scalable lead volume.
+                        </p>
+                    </div>
+
+                    <!-- Filter Navigation -->
+                    <div class="results-filter-nav">
+                        <button class="results-filter-btn active" onclick="filterResults('all', this)">All Real Data</button>
+                        <button class="results-filter-btn" onclick="filterResults('leadgen', this)">40,000+ Lead Scale</button>
+                        <button class="results-filter-btn" onclick="filterResults('ecom', this)">14.3x ROAS E-commerce</button>
+                        <button class="results-filter-btn" onclick="filterResults('scale', this)">International Scale</button>
+                    </div>
+
+                    <!-- Cards Grid -->
+                    <div class="results-cards-grid">
+                        
+                        <!-- Card 1: 40k+ Lead Gen -->
+                        <div class="ads-performance-card" data-category="leadgen">
+                            <div>
+                                <div class="ads-card-header">
+                                    <span class="ads-badge ads-badge--lead">Meta Lead Generation</span>
+                                    <span class="ads-verified-tag">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Ads Manager Data
+                                    </span>
+                                </div>
+                                <div class="ads-main-stat">
+                                    <div class="ads-stat-number" style="color:#60a5fa;">40,077+</div>
+                                    <div class="ads-stat-label">Qualified On-Facebook Leads Generated</div>
+                                </div>
+                                <div class="ads-metrics-table">
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Avg. Cost Per Lead:</span>
+                                        <span class="ads-metric-val highlight-green">₹23.82 / lead</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Top Ad Set CPL:</span>
+                                        <span class="ads-metric-val highlight-green">₹13.54 / lead</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Total Impressions:</span>
+                                        <span class="ads-metric-val">35,528,676</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Total Ad Budget Managed:</span>
+                                        <span class="ads-metric-val">₹9,54,602.18</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-card-footer-note">
+                                <strong>Strategy:</strong> Low-friction instant lead forms with strict pre-qualification fields, targeting active high-intent customer segments across India.
+                            </div>
+                        </div>
+
+                        <!-- Card 2: 14.34x Peak ROAS E-commerce -->
+                        <div class="ads-performance-card" data-category="ecom">
+                            <div>
+                                <div class="ads-card-header">
+                                    <span class="ads-badge ads-badge--ecom">E-commerce Purchases</span>
+                                    <span class="ads-verified-tag">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Verified Purchases
+                                    </span>
+                                </div>
+                                <div class="ads-main-stat">
+                                    <div class="ads-stat-number" style="color:#fb923c;">14.34x</div>
+                                    <div class="ads-stat-label">Peak Purchase ROAS (7.91x Campaign Avg)</div>
+                                </div>
+                                <div class="ads-metrics-table">
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Amount Spent:</span>
+                                        <span class="ads-metric-val">₹10,375.82</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Conversion Value (Sales):</span>
+                                        <span class="ads-metric-val highlight-green">₹82,035.78</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Cost Per Purchase:</span>
+                                        <span class="ads-metric-val">₹187.65 – ₹266.05</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Top Ad Set Return:</span>
+                                        <span class="ads-metric-val highlight-green">14.34x & 8.10x ROAS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-card-footer-note">
+                                <strong>Strategy:</strong> Creative-led direct response advertising, turning every ₹1 spent into nearly ₹8 to ₹14 in immediate top-line sales.
+                            </div>
+                        </div>
+
+                        <!-- Card 3: International Multi-Market Scale -->
+                        <div class="ads-performance-card" data-category="scale">
+                            <div>
+                                <div class="ads-card-header">
+                                    <span class="ads-badge ads-badge--scale">International Scaling</span>
+                                    <span class="ads-verified-tag">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Multi-Market Meta
+                                    </span>
+                                </div>
+                                <div class="ads-main-stat">
+                                    <div class="ads-stat-number" style="color:#34d399;">18.06x</div>
+                                    <div class="ads-stat-label">Sustained International ROAS Scale</div>
+                                </div>
+                                <div class="ads-metrics-table">
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Total Purchases Generated:</span>
+                                        <span class="ads-metric-val highlight-green">1,685+ purchases</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Campaign Revenue:</span>
+                                        <span class="ads-metric-val highlight-green">TL 1,361,838+</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Avg. Purchase CPA:</span>
+                                        <span class="ads-metric-val">TL 44.75</span>
+                                    </div>
+                                    <div class="ads-metric-row">
+                                        <span class="ads-metric-label">Ad Sets Hitting >16x ROAS:</span>
+                                        <span class="ads-metric-val">Multiple Ad Sets</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-card-footer-note">
+                                <strong>Strategy:</strong> High-ticket multi-currency campaigns with automated CBO budget distribution across international buyers.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 09. "WHY US" SECTION (Original Restored Content) -->
+            <section id="why-us" class="section-padding why-us-section">
+                <div class="container" style="text-align:center;">
+                    <span class="section-badge">WHY US</span>
+                    <h2 class="section-title">Marketing Should Be More Than Just Activity</h2>
+                    
+                    <div class="why-us-card" style="max-width:48rem; margin:2.5rem auto; text-align:left;">
+                        <ul class="why-us-list">
+                            <li class="why-us-item">
+                                <div class="why-us-icon-cross">✕</div>
+                                <span class="why-us-text">More posts don't necessarily mean more customers.</span>
+                            </li>
+                            <li class="why-us-item">
+                                <div class="why-us-icon-cross">✕</div>
+                                <span class="why-us-text">More clicks don't necessarily mean more revenue.</span>
+                            </li>
+                            <li class="why-us-item">
+                                <div class="why-us-icon-cross">✕</div>
+                                <span class="why-us-text">More leads don't necessarily mean better leads.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="why-us-quote-box">
+                        <p>
+                            We focus on understanding what's happening across the customer journey — and improving the parts that affect business results.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. INTERACTIVE PROPOSAL & CONTACT SECTION (Original Restored Content) -->
+            <section id="proposal-section" class="section-padding proposal-section">
+                <div id="contact" style="position:relative; top:-5rem; height:0;"></div>
+                <div class="container">
+                    <div class="proposal-grid-wrapper">
+                        
+                        <!-- Left: 6 Service Cards -->
+                        <div class="proposal-left">
+                            <h2>Tell Us What You're Trying To Grow</h2>
+                            <p>Every business has a different challenge. Tell us a little about yours and we'll get back to you with the next step.</p>
+
+                            <div class="proposal-cards-selector">
+                                <!-- Card 1: Performance Ads -->
+                                <button type="button" class="proposal-card-btn" data-service="performance" onclick="selectProposalService('performance')">
+                                    <div class="proposal-card-icon" style="background:#eff6ff; color:#2563eb;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                    </div>
+                                    <span>Meta / Google Ads</span>
+                                </button>
+
+                                <!-- Card 2: Lead Gen -->
+                                <button type="button" class="proposal-card-btn" data-service="leadgen" onclick="selectProposalService('leadgen')">
+                                    <div class="proposal-card-icon" style="background:#ede9fe; color:#7c3aed;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                    </div>
+                                    <span>Lead Generation</span>
+                                </button>
+
+                                <!-- Card 3: Social Media -->
+                                <button type="button" class="proposal-card-btn" data-service="social" onclick="selectProposalService('social')">
+                                    <div class="proposal-card-icon" style="background:#fce7f3; color:#db2777;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+                                    </div>
+                                    <span>Social Media</span>
+                                </button>
+
+                                <!-- Card 4: E-commerce -->
+                                <button type="button" class="proposal-card-btn" data-service="ecommerce" onclick="selectProposalService('ecommerce')">
+                                    <div class="proposal-card-icon" style="background:#fff7ed; color:#ea580c;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78"></path></svg>
+                                    </div>
+                                    <span>E-commerce</span>
+                                </button>
+
+                                <!-- Card 5: Website Development -->
+                                <button type="button" class="proposal-card-btn" data-service="ecom-web" onclick="selectProposalService('ecom-web')">
+                                    <div class="proposal-card-icon" style="background:#fdf2f8; color:#ec4899;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                    </div>
+                                    <span>Ecommerce Website</span>
+                                </button>
+
+                                <!-- Card 6: SEO -->
+                                <button type="button" class="proposal-card-btn" data-service="seo" onclick="selectProposalService('seo')">
+                                    <div class="proposal-card-icon" style="background:#ecfdf5; color:#059669;">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    </div>
+                                    <span>SEO</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right: Proposal Form -->
+                        <div class="proposal-form-card">
+                            <form id="main-proposal-form" onsubmit="handleLeadFormSubmit(event, this, document.getElementById('proposal-form-msg'), 'proposal_form')">
+                                <input type="text" name="hp_website" class="hp-field" tabindex="-1" autocomplete="off">
+
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Email Address" required class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="company" placeholder="Company Name" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <select id="proposal-service-select" name="service" required class="form-select" onchange="handleServiceDropdownChange(this.value)">
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="ecommerce">E-commerce / Dropshipping</option>
+                                        <option value="ecom-web">Ecommerce Website Development</option>
+                                        <option value="seo">SEO</option>
+                                        <option value="leadgen">Lead Generation</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="performance">Performance Marketing</option>
+                                        <option value="other">Something Else</option>
+                                    </select>
+                                </div>
+
+                                <!-- 60-word description box (for 'Something Else') -->
+                                <div id="other-description-container" style="display:none; margin-bottom:1rem;">
+                                    <textarea id="challenge-textarea" name="message" rows="3" class="form-textarea" placeholder="Briefly describe your challenge (Max 60 words)" onkeyup="updateWordCount(this, 60)" style="resize:none;"></textarea>
+                                    <div id="word-count-indicator" style="text-align:right; font-size:0.75rem; color:#94a3b8; margin-top:0.35rem;">
+                                        0 / 60 words
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn-proposal-submit">
+                                    Get Free Proposal
+                                </button>
+                                
+                                <div id="proposal-form-msg" class="form-feedback-text">
+                                    No commitment required.
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 11. "WHO WE ARE / ABOUT US" SECTION (Original Restored Content) -->
+            <section id="who-we-are" class="section-padding about-section">
+                <div class="container">
+                    <div class="about-content-box">
+                        <span class="section-badge">● WHO WE ARE</span>
+                        <h2 class="section-title">Driven By Data. Focused On Growth.</h2>
+                        <p class="about-text-lead">
+                            At Apex Marketing House, we believe that digital marketing should be a measurable investment, not a blind expense. We are a specialized team of strategists, media buyers, and optimization experts dedicated to scaling businesses through proven digital architectures.
+                        </p>
+                        <p class="about-text-body">
+                            We don't just run ads; we engineer pipelines that turn attention into revenue.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. FREQUENTLY ASKED QUESTIONS (Original Restored Content) -->
+            <section id="faq" class="section-padding faq-section">
+                <div class="container">
+                    <h2 class="section-title" style="text-align:center;">Frequently Asked Questions</h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item open">
+                            <div class="faq-header" onclick="toggleFaq(this)">
+                                <span>What size of business do you work with?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="faq-body">
+                                We work with a variety of businesses ranging from promising startups to established mid-market enterprises. Our strategies are scalable to fit the scope of your budget and growth ambitions.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header" onclick="toggleFaq(this)">
+                                <span>Do you work with Shopify, e-commerce brands and dropshipping businesses?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="faq-body">
+                                Yes. We help e-commerce and dropshipping businesses with Shopify website development, product research, product listings with SEO, ad creatives, and sales-focused advertising.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header" onclick="toggleFaq(this)">
+                                <span>Can you help me generate leads through WhatsApp or online forms?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="faq-body">
+                                Yes. We can set up and manage lead-generation campaigns through WhatsApp, Instant Forms, websites, and Messenger, depending on where your potential customers are most likely to respond.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header" onclick="toggleFaq(this)">
+                                <span>What platforms do you manage advertising campaigns on?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="faq-body">
+                                Our Performance Marketing services include Meta Ads, Google Ads, and LinkedIn Ads. The platform and campaign strategy can be selected according to your business objective and target audience.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header" onclick="toggleFaq(this)">
+                                <span>What if I don't know which service I need?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                            <div class="faq-body">
+                                That's okay. Tell us about your business and what you're trying to achieve, and we'll help identify which of our services is most relevant to your situation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 1: E-COMMERCE / DROPSHIPPING
+             ========================================================================== -->
+        <div id="page-ecommerce" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-ecommerce);">Apex Marketing House / E-commerce</div>
+                    <h1>E-commerce / Dropshipping</h1>
+                    <p>End-to-end solutions to build, launch, and scale your online store into a highly profitable brand.</p>
+                </div>
+
+                <!-- 2-Line Categorized Services Grid -->
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ffe4cc; color:var(--color-ecommerce);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Shopify Website</h4>
+                                <p>High-converting, mobile-optimized store setup and development.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ffe4cc; color:var(--color-ecommerce);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Trending Product Research</h4>
+                                <p>Identify promising products for your niche and offer.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ffe4cc; color:var(--color-ecommerce);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Product Listing + SEO</h4>
+                                <p>Optimized titles, descriptions, tags, and listing structure.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ffe4cc; color:var(--color-ecommerce);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                            </div>
+                            <div>
+                                <h4>Ad Creative Making</h4>
+                                <p>Product-focused image and video creatives for sales campaigns.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card" style="grid-column: 1 / -1;">
+                            <div class="subpage-service-icon" style="background:#ffe4cc; color:var(--color-ecommerce);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 12l-4-4-4 4"></path><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Advertisement for Sales</h4>
+                                <p>Sales-focused advertising campaigns designed around measurable outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Ready To Grow Your Store?</h3>
+                        <p>Let's discuss how we can turn your store into a profitable brand.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('ecommerce')" class="btn-subpage-action">
+                        Discuss Your E-commerce Growth &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 2: ECOMMERCE WEBSITE DEVELOPMENT (NEW SUBPAGE!)
+             ========================================================================== -->
+        <div id="page-ecom-web" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-ecom-web);">Apex Marketing House / Website Development</div>
+                    <h1>Ecommerce Website Development</h1>
+                    <p>Custom Shopify store design, mobile-first optimization, fast checkout setup, and conversion-focused architectures.</p>
+                </div>
+
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fce7f3; color:var(--color-ecom-web);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Custom Shopify Store Setup</h4>
+                                <p>Tailored theme design, responsive layout, and branded visual identity.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fce7f3; color:var(--color-ecom-web);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>Speed & Mobile Optimization</h4>
+                                <p>Fast-loading pages, optimized assets, and seamless smartphone checkout.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fce7f3; color:var(--color-ecom-web);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+                            </div>
+                            <div>
+                                <h4>App & Payment Gateway Setup</h4>
+                                <p>Integrated payment gateways, inventory sync, and shipping calculators.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fce7f3; color:var(--color-ecom-web);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Conversion Rate Architecture</h4>
+                                <p>High-converting product pages, upsell funnels, and cart recovery flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Need A High-Converting Store?</h3>
+                        <p>Let's engineer an online store that turns casual visitors into repeat buyers.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('ecom-web')" class="btn-subpage-action">
+                        Discuss Your Ecommerce Website &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 3: SEO
+             ========================================================================== -->
+        <div id="page-seo" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-seo);">Apex Marketing House / SEO</div>
+                    <h1>SEO</h1>
+                    <p>Dominate marketplace search results and get your products in front of buyers actively searching for them.</p>
+                </div>
+
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#d1fae5; color:var(--color-seo);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Amazon Listing SEO</h4>
+                                <p>Optimize product listings to improve marketplace visibility.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#d1fae5; color:var(--color-seo);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Flipkart Listing SEO</h4>
+                                <p>Improve listing structure, relevance, and discoverability.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#d1fae5; color:var(--color-seo);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Meesho Listing SEO</h4>
+                                <p>Optimize product information for better marketplace search visibility.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#d1fae5; color:var(--color-seo);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Website SEO</h4>
+                                <p>Build organic visibility and attract relevant search traffic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Ready To Dominate Search?</h3>
+                        <p>Let's build an organic ranking strategy that scales your revenue.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('seo')" class="btn-subpage-action">
+                        Discuss Your SEO Strategy &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 4: LEAD GENERATION
+             ========================================================================== -->
+        <div id="page-leadgen" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-leadgen);">Apex Marketing House / Lead Gen</div>
+                    <h1>Lead Generation</h1>
+                    <p>Build a predictable pipeline of qualified prospects ready to convert into closed deals.</p>
+                </div>
+
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#dbeafe; color:var(--color-leadgen);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>WhatsApp Lead Generation</h4>
+                                <p>Drive qualified prospects into direct conversations on WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#dbeafe; color:var(--color-leadgen);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Instant Form Campaigns</h4>
+                                <p>Capture enquiries with low-friction forms on advertising platforms.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#dbeafe; color:var(--color-leadgen);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Website Lead Capture</h4>
+                                <p>Turn website visitors into enquiries through focused conversion flows.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#dbeafe; color:var(--color-leadgen);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Messenger Lead Generation</h4>
+                                <p>Use chat-based campaigns to start and qualify conversations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Need More Qualified Leads?</h3>
+                        <p>Let's build a predictable customer acquisition funnel for your team.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('leadgen')" class="btn-subpage-action">
+                        Discuss Your Lead Generation &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 5: SOCIAL MEDIA
+             ========================================================================== -->
+        <div id="page-social" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-social);">Apex Marketing House / Social</div>
+                    <h1>Social Media Strategy</h1>
+                    <p>Establish authentic brand presence, build community trust, and capture market attention consistently.</p>
+                </div>
+
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fdf2f8; color:var(--color-social);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Engagement</h4>
+                                <p>Build meaningful interaction and activity around your social profiles.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#fdf2f8; color:var(--color-social);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Content Strategy</h4>
+                                <p>Plan consistent, audience-focused content around your goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card" style="grid-column: 1 / -1;">
+                            <div class="subpage-service-icon" style="background:#fdf2f8; color:var(--color-social);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>Account Growth</h4>
+                                <p>Use organic growth tactics to build a relevant follower base.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Ready To Grow Your Social Presence?</h3>
+                        <p>Let's discuss how we can build an active and engaged community for you.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('social')" class="btn-subpage-action">
+                        Discuss Your Social Media Goals &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE 6: PERFORMANCE MARKETING
+             ========================================================================== -->
+        <div id="page-performance" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home">
+                    &larr; Back to Home
+                </button>
+                <div class="subpage-header">
+                    <div class="subpage-badge" style="color:var(--color-performance);">Apex Marketing House / Performance</div>
+                    <h1>Performance Marketing</h1>
+                    <p>Data-backed advertising campaigns built strictly around positive Return on Ad Spend (ROAS).</p>
+                </div>
+
+                <div class="subpage-deliverables-box">
+                    <h3>What We Provide</h3>
+                    <div class="subpage-grid-2col">
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ede9fe; color:var(--color-performance);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Meta Ad Services</h4>
+                                <p>Targeted advertising across Facebook and Instagram.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card">
+                            <div class="subpage-service-icon" style="background:#ede9fe; color:var(--color-performance);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6"></path><path d="m9 9 6 6"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Google Ad Services</h4>
+                                <p>Search, Display, and Performance Max campaign setups.</p>
+                            </div>
+                        </div>
+
+                        <div class="subpage-service-card" style="grid-column: 1 / -1;">
+                            <div class="subpage-service-icon" style="background:#ede9fe; color:var(--color-performance);">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <h4>LinkedIn Ad Services</h4>
+                                <p>B2B advertising and professional audience targeting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subpage Dedicated CTA Bar -->
+                <div class="subpage-cta-bar">
+                    <div>
+                        <h3>Ready For High-ROAS Performance Ads?</h3>
+                        <p>Let's map out a data-backed advertising campaign focused on measurable ROI.</p>
+                    </div>
+                    <button onclick="openProposalFormWithService('performance')" class="btn-subpage-action">
+                        Discuss Performance Advertising &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE: PRIVACY POLICY
+             ========================================================================== -->
+        <div id="page-privacy" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home" aria-label="Return to previous page">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back to Previous Page
+                </button>
+                
+                <div class="subpage-header" style="margin-bottom:2.5rem;">
+                    <div class="subpage-badge" style="color:var(--ig-magenta);">Apex Marketing House / Legal</div>
+                    <h1 style="font-size:2.5rem; margin-bottom:0.5rem;">Privacy Policy</h1>
+                </div>
+
+                <div class="legal-content-card">
+                    <p class="legal-intro-p">
+                        At <strong>Apex Marketing House</strong>, we respect your privacy and are committed to protecting the personal information you choose to share with us.
+                    </p>
+                    <p class="legal-intro-p">
+                        This Privacy Policy explains what information we may collect, how we use it, how we handle it, and the choices available to you when you contact us or use our website and services.
+                    </p>
+                    <p class="legal-intro-p" style="margin-bottom:2.25rem;">
+                        By using our website or voluntarily providing your information to us, you acknowledge the practices described in this Privacy Policy.
+                    </p>
+
+                    <!-- Section 1 -->
+                    <div class="legal-section-block">
+                        <h3>1. Information We Collect</h3>
+                        <p>We generally collect only the information that you voluntarily provide to us.</p>
+                        <p>This may include information submitted through our website lead forms or provided when you contact us through other communication channels, such as:</p>
+                        <ul>
+                            <li>Name</li>
+                            <li>Phone number</li>
+                            <li>Email address</li>
+                            <li>Website or business information</li>
+                            <li>Social media handles or profile information that you choose to provide</li>
+                            <li>Information about your business or marketing requirements</li>
+                            <li>Any message, enquiry, or other information you voluntarily provide</li>
+                        </ul>
+                        <p>The exact information collected may vary depending on how you contact us and the information you choose to provide.</p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="legal-section-block">
+                        <h3>2. Information Received Through Social Media and Other Communication Channels</h3>
+                        <p>You may contact us through platforms such as Instagram, Facebook, WhatsApp, email, X (Twitter), or other communication channels.</p>
+                        <p>When you voluntarily contact us through these platforms, we may receive and use the information that you provide or make available to us through that communication for the purpose of responding to your enquiry and communicating with you.</p>
+                        <p>Your use of those third-party platforms is also subject to their respective privacy policies and terms.</p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div class="legal-section-block">
+                        <h3>3. Why We Collect Your Information</h3>
+                        <p>We collect and use the information you provide primarily to:</p>
+                        <ul>
+                            <li>Respond to your enquiry or request.</li>
+                            <li>Contact you regarding the service or information you have requested.</li>
+                            <li>Understand your business, requirements, or objectives.</li>
+                            <li>Discuss and provide our services where applicable.</li>
+                            <li>Communicate with you regarding an ongoing enquiry or business relationship.</li>
+                            <li>Provide information that is relevant to your enquiry.</li>
+                            <li>Maintain appropriate records of enquiries and communications.</li>
+                        </ul>
+                        <p>We do not collect personal information for purposes unrelated to the reason for which you provided it unless required or permitted by applicable law.</p>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div class="legal-section-block">
+                        <h3>4. No Intrusive Monitoring or Unauthorized Tracking</h3>
+                        <p>We respect your privacy.</p>
+                        <p>We do not use the personal information you voluntarily provide to personally monitor, stalk, or otherwise intrusively track you.</p>
+                        <p>Our use of your information is intended to be connected to your enquiry, communication with us, or the services and assistance you request.</p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div class="legal-section-block">
+                        <h3>5. How We May Communicate With You</h3>
+                        <p>If you provide your contact information or contact us directly, we may use the information you provide to respond to you through appropriate communication channels, including:</p>
+                        <ul>
+                            <li>Phone</li>
+                            <li>Email</li>
+                            <li>WhatsApp</li>
+                            <li>Social media messaging</li>
+                            <li>Other communication methods through which you contacted us</li>
+                        </ul>
+                        <p>Our communications will generally relate to your enquiry, requested services, business requirements, or our ongoing relationship with you.</p>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div class="legal-section-block">
+                        <h3>6. Sharing of Personal Information</h3>
+                        <p>We do not sell your personal information.</p>
+                        <p>We also do not intentionally disclose your personal information to unrelated third parties for their independent marketing purposes.</p>
+                        <p>However, information may need to be processed or accessed by service providers, technology platforms, communication platforms, hosting providers, or other parties that help us operate our website, manage enquiries, communicate with you, or provide our services.</p>
+                        <p>Where information is processed by such parties, it may be subject to their own terms and privacy policies.</p>
+                        <p>We may also disclose information where required by applicable law, regulation, legal process, or to protect our legal rights, website, users, or business.</p>
+                    </div>
+
+                    <!-- Section 7 -->
+                    <div class="legal-section-block">
+                        <h3>7. Data Security</h3>
+                        <p>We take reasonable measures to protect the personal information provided to us from unauthorized access, misuse, alteration, disclosure, or loss.</p>
+                        <p>However, no method of transmitting or storing information electronically can be guaranteed to be completely secure.</p>
+                        <p>Therefore, while we take reasonable precautions, we cannot guarantee absolute security of information transmitted to or stored by us.</p>
+                    </div>
+
+                    <!-- Section 8 -->
+                    <div class="legal-section-block">
+                        <h3>8. How Long We Keep Your Information</h3>
+                        <p>We retain personal information only for as long as reasonably necessary for the purposes for which it was collected, including responding to enquiries, providing services, maintaining business records, resolving disputes, complying with legal obligations, or protecting our legitimate interests.</p>
+                        <p>Where information is no longer required and there is no legal or legitimate reason to retain it, we may delete or anonymize it.</p>
+                    </div>
+
+                    <!-- Section 9 -->
+                    <div class="legal-section-block">
+                        <h3>9. Your Rights</h3>
+                        <p>Depending on applicable law, including the Digital Personal Data Protection Act, 2023, you may contact us regarding the personal information you have provided to us to request:</p>
+                        <ul>
+                            <li>Correction or updating of inaccurate information.</li>
+                            <li>Deletion or erasure of your personal information.</li>
+                        </ul>
+                        <p>Requests for deletion may be subject to circumstances where we are legally required or otherwise permitted to retain certain information.</p>
+                    </div>
+
+                    <!-- Section 10 -->
+                    <div class="legal-section-block">
+                        <h3>10. Cookies and Similar Technologies</h3>
+                        <p>Our website may use cookies or similar technologies where required for the website to function, understand website usage, improve the user experience, or support our digital marketing and analytics activities.</p>
+                        <p>Where applicable, information collected through such technologies may include technical or usage information such as browser type, device information, pages visited, or general interaction with the website.</p>
+                        <p>The specific technologies used on our website may change from time to time.</p>
+                        <p>Where required by applicable law, appropriate notice or consent mechanisms may be provided.</p>
+                    </div>
+
+                    <!-- Section 11 -->
+                    <div class="legal-section-block">
+                        <h3>11. Third-Party Websites and Platforms</h3>
+                        <p>Our website or communications may contain links to third-party websites, social media platforms, or other services.</p>
+                        <p>We are not responsible for the privacy practices, security, content, or policies of third-party websites and platforms.</p>
+                        <p>We encourage you to review the privacy policies of those services before providing them with personal information.</p>
+                    </div>
+
+                    <!-- Section 12 -->
+                    <div class="legal-section-block">
+                        <h3>12. Changes to This Privacy Policy</h3>
+                        <p>We may update this Privacy Policy from time to time to reflect changes in our business, website, services, technology, or applicable legal requirements.</p>
+                        <p>We encourage you to review this page periodically for the latest information about our privacy practices.</p>
+                    </div>
+
+                    <div class="legal-ack-banner">
+                        By contacting us or voluntarily providing your personal information, you acknowledge that you have read and understood this Privacy Policy.
+                    </div>
+                </div>
+
+                <div style="margin-top:2.5rem; text-align:center;">
+                    <button onclick="navigateBack()" class="btn-back-home" style="margin-bottom:0; font-size:1rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        Return to Previous Page
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================================
+             SUBPAGE: TERMS OF SERVICE
+             ========================================================================== -->
+        <div id="page-terms" class="page-section page-view subpage-container">
+            <div class="container" style="max-width:56rem;">
+                <button onclick="navigateBack()" class="btn-back-home" aria-label="Return to previous page">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back to Previous Page
+                </button>
+                
+                <div class="subpage-header" style="margin-bottom:2.5rem;">
+                    <div class="subpage-badge" style="color:var(--ig-magenta);">Apex Marketing House / Legal</div>
+                    <h1 style="font-size:2.5rem; margin-bottom:0.5rem;">Terms of Service</h1>
+                </div>
+
+                <div class="legal-content-card">
+                    <p class="legal-intro-p">
+                        Welcome to <strong>Apex Marketing House</strong>.
+                    </p>
+                    <p class="legal-intro-p">
+                        These Terms of Service ("Terms", "Terms of Service", "we", "us", or "our") govern your use of our website and the digital marketing, advertising, consulting, and related services provided by <strong>Apex Marketing House</strong>.
+                    </p>
+                    <p class="legal-intro-p" style="margin-bottom:2.25rem;">
+                        By accessing our website, submitting an enquiry, engaging our services, or otherwise working with us, you agree to these Terms. If you do not agree with these Terms, please do not use our website or engage our services.
+                    </p>
+
+                    <!-- Section 1 -->
+                    <div class="legal-section-block">
+                        <h3>1. Our Services</h3>
+                        <p>We provide digital marketing and online business growth services, which may include, depending on the service selected by the client:</p>
+                        <ul>
+                            <li>Performance marketing</li>
+                            <li>Meta advertising and campaign management</li>
+                            <li>Lead generation</li>
+                            <li>Search engine optimization (SEO)</li>
+                            <li>Social media marketing and management</li>
+                            <li>E-commerce and dropshipping marketing</li>
+                            <li>Advertising strategy and campaign planning</li>
+                            <li>Ad creative and campaign-related recommendations</li>
+                            <li>Conversion and performance analysis</li>
+                            <li>Marketing consultation</li>
+                            <li>Tracking, analytics, and related marketing support</li>
+                            <li>Other digital marketing services agreed upon with the client</li>
+                        </ul>
+                        <p>The exact services, deliverables, timelines, pricing, and scope of work may vary depending on the client's requirements and the service agreement or proposal provided.</p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="legal-section-block">
+                        <h3>2. Service Scope and Deliverables</h3>
+                        <p>Before beginning a paid engagement, we may agree with the client on the specific services and deliverables to be provided.</p>
+                        <p>Our responsibility is limited to the services specifically agreed upon.</p>
+                        <p>Any work, feature, revision, platform, campaign, creative, report, consultation, or additional service outside the agreed scope may require additional fees or a separate agreement.</p>
+                        <p>We may recommend changes to the scope of work when we reasonably believe that doing so would improve the effectiveness or suitability of the marketing strategy.</p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div class="legal-section-block">
+                        <h3>3. No Guaranteed Marketing Results</h3>
+                        <p>Digital marketing performance depends on many factors, including but not limited to:</p>
+                        <ul>
+                            <li>Advertising platform algorithms</li>
+                            <li>Competition</li>
+                            <li>Market conditions</li>
+                            <li>Product or service demand</li>
+                            <li>Pricing and offer quality</li>
+                            <li>Website or landing-page performance</li>
+                            <li>Customer experience and creative quality</li>
+                            <li>Audience response and budget allocation</li>
+                            <li>Tracking, attribution, and sales follow-up</li>
+                            <li>Changes made by third-party platforms</li>
+                        </ul>
+                        <p>For these reasons, we <strong>do not guarantee specific results</strong>, including a particular number of leads, sales, conversions, revenue, return on ad spend (ROAS), cost per lead (CPL), cost per acquisition (CPA), engagement level, ranking, or profit.</p>
+                        <p>We will use reasonable professional efforts to perform the agreed services and apply appropriate strategies based on the information and resources available to us, but marketing outcomes cannot be guaranteed.</p>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div class="legal-section-block">
+                        <h3>4. Advertising Platforms and Third-Party Services</h3>
+                        <p>Our services may involve third-party platforms such as Meta, Facebook, Instagram, Google, LinkedIn, TikTok, WhatsApp, Shopify, analytics platforms, hosting providers, payment providers, or other technology and advertising platforms.</p>
+                        <p>These platforms are independently operated by third parties. We do not control their algorithms, policies, approval processes, account restrictions, technical availability, pricing, advertising costs, data processing, platform changes, or suspension decisions.</p>
+                        <p>A third-party platform may reject advertisements, restrict an account, change its policies, modify its algorithm, experience technical problems, or otherwise affect campaign performance. We are not responsible for losses or interruptions caused by decisions, policy changes, outages, restrictions, suspensions, or other actions of third-party platforms, provided such circumstances are outside our reasonable control.</p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div class="legal-section-block">
+                        <h3>5. Advertising Budget and Third-Party Charges</h3>
+                        <p>Our professional service fees and advertising/media budgets are separate unless expressly stated otherwise.</p>
+                        <p>Where applicable, the client is responsible for paying advertising platforms directly or providing the necessary funds for advertising expenditure. The advertising budget is not our professional service fee.</p>
+                        <p>The client is also responsible for third-party costs that are necessary or requested for the delivery of the agreed services, including applicable software, tools, subscriptions, hosting, domain, creative resources, or platform charges, unless otherwise agreed in writing.</p>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div class="legal-section-block">
+                        <h3>6. Client Responsibilities</h3>
+                        <p>To provide our services effectively, the client agrees to provide accurate and timely information, materials, access, approvals, and instructions reasonably required for the work, which may include:</p>
+                        <ul>
+                            <li>Business and product information</li>
+                            <li>Website or landing-page access</li>
+                            <li>Advertising and social media account access</li>
+                            <li>Business Manager or relevant platform permissions</li>
+                            <li>Product images, videos, logos, and creative assets</li>
+                            <li>Pricing, offer, and target audience information</li>
+                            <li>Tracking or analytics access</li>
+                            <li>Timely approval of advertisements and marketing materials</li>
+                        </ul>
+                        <p>The client is responsible for ensuring that the information and materials supplied to us are accurate, lawful, and do not infringe the rights of any third party. Delays in providing required information, access, materials, or approvals may affect project timelines and campaign performance.</p>
+                    </div>
+
+                    <!-- Section 7 -->
+                    <div class="legal-section-block">
+                        <h3>7. Client Content and Legal Compliance</h3>
+                        <p>The client remains responsible for the legality, accuracy, authenticity, and ownership of the products, services, claims, offers, testimonials, images, videos, trademarks, and other materials supplied by the client.</p>
+                        <p>The client must not instruct us to create or publish content that violates applicable laws, regulations, advertising policies, intellectual-property rights, or third-party rights.</p>
+                        <p>Where applicable, the client is responsible for ensuring that its products, services, business practices, website, privacy notices, refund policies, terms, and other customer-facing materials comply with applicable laws and platform requirements. We may refuse or discontinue work that we reasonably believe may involve unlawful, misleading, fraudulent, deceptive, or prohibited activity.</p>
+                    </div>
+
+                    <!-- Section 8 -->
+                    <div class="legal-section-block">
+                        <h3>8. Advertising Account Access</h3>
+                        <p>Where we manage advertising campaigns or other third-party accounts on behalf of a client, the client may be required to provide appropriate access or permissions. We will use such access only for the agreed services.</p>
+                        <p>The client remains the owner or account holder of its advertising and business accounts unless otherwise agreed.</p>
+                        <p>We are not responsible for pre-existing account restrictions, previous policy violations, historical campaign issues, payment problems, or other account conditions that existed before our involvement.</p>
+                    </div>
+
+                    <!-- Section 9 -->
+                    <div class="legal-section-block">
+                        <h3>9. Campaign Approval and Client Decisions</h3>
+                        <p>Where client approval is required before publication, the client is responsible for reviewing and approving the relevant campaign, advertisement, copy, creative, offer, landing page, or other marketing material. Once approved by the client, we may proceed with implementation according to the agreed scope.</p>
+                        <p>The client remains responsible for business decisions made outside our agreed scope, including product pricing, inventory, fulfilment, customer support, sales-team performance, shipping, refunds, returns, and order processing.</p>
+                    </div>
+
+                    <!-- Section 10 -->
+                    <div class="legal-section-block">
+                        <h3>10. Intellectual Property</h3>
+                        <p>Unless otherwise agreed in writing, materials, strategies, templates, processes, systems, reports, and other work created specifically for the client as part of a paid engagement may be used by the client for its business purposes after the applicable fees have been paid.</p>
+                        <p>Our pre-existing intellectual property, internal processes, frameworks, know-how, templates, methodologies, tools, and proprietary systems remain our property.</p>
+                        <p>Third-party materials, platforms, software, fonts, stock images, music, or other licensed materials remain subject to their respective owners' terms and licences. The client represents that it has the necessary rights or permissions for materials it provides to us.</p>
+                    </div>
+
+                    <!-- Section 11 -->
+                    <div class="legal-section-block">
+                        <h3>11. Confidentiality</h3>
+                        <p>We respect the confidential information shared with us during a business relationship. We will take reasonable steps to keep confidential business information, strategies, account information, and other non-public information private and will use such information primarily for providing the agreed services.</p>
+                        <p>The confidentiality obligation does not apply to information that is already publicly available, was lawfully known to us before disclosure, becomes publicly available without a breach of these Terms, is independently developed without using confidential information, or must be disclosed under applicable law or legal process.</p>
+                    </div>
+
+                    <!-- Section 12 -->
+                    <div class="legal-section-block">
+                        <h3>12. Payments and Fees</h3>
+                        <p>Service fees, payment schedules, billing terms, and other commercial conditions will be communicated to the client before or during the engagement.</p>
+                        <p>Unless otherwise agreed in writing, work may be dependent on receiving payment within the agreed timeframe. Late or unpaid amounts may result in suspension or delay of services. Any additional work outside the agreed scope may be charged separately after informing the client.</p>
+                    </div>
+
+                    <!-- Section 13 -->
+                    <div class="legal-section-block">
+                        <h3>13. Cancellation and Termination</h3>
+                        <p>Either party may terminate an ongoing service arrangement in accordance with the applicable agreement or notice period agreed between the parties.</p>
+                        <p>We may suspend or terminate services where payments remain overdue, the client materially breaches these Terms, required information or access is repeatedly not provided, the client requests unlawful or prohibited activity, continued work creates significant legal risk, or a third-party platform prevents agreed services from being performed.</p>
+                        <p>Termination does not automatically cancel payment obligations that have already accrued for services performed or expenses properly incurred before termination.</p>
+                    </div>
+
+                    <!-- Section 14 -->
+                    <div class="legal-section-block">
+                        <h3>14. Refunds</h3>
+                        <p>Refund eligibility, if any, will depend on the specific service agreement, proposal, invoice, or payment terms communicated to the client.</p>
+                        <p>Because digital marketing services involve work performed, campaign setup, strategy development, creative production, account management, or third-party expenditure, payments may not automatically be refundable once the relevant work or expenditure has been incurred.</p>
+                        <p>Any advertising spend paid to third-party advertising platforms is subject to the policies and refund rules of the relevant platform.</p>
+                    </div>
+
+                    <!-- Section 15 -->
+                    <div class="legal-section-block">
+                        <h3>15. Website Use</h3>
+                        <p>You may use our website for lawful purposes only. You must not:</p>
+                        <ul>
+                            <li>Use the website for fraudulent or unlawful activity</li>
+                            <li>Attempt to gain unauthorized access to the website or its systems</li>
+                            <li>Introduce malicious software or harmful code</li>
+                            <li>Interfere with the operation or security of the website</li>
+                            <li>Copy or misuse our content, branding, or intellectual property without permission</li>
+                            <li>Use information obtained from the website for unlawful or abusive purposes</li>
+                        </ul>
+                        <p>We reserve the right to restrict or terminate access to the website where reasonably necessary to protect our website, users, business, or systems.</p>
+                    </div>
+
+                    <!-- Section 16 -->
+                    <div class="legal-section-block">
+                        <h3>16. Third-Party Links</h3>
+                        <p>Our website or communications may contain links to third-party websites, platforms, tools, or services provided for convenience or informational purposes.</p>
+                        <p>We do not control and are not responsible for the availability, security, content, policies, or practices of third-party websites or services. Your use of third-party services is subject to the terms and policies of those third parties.</p>
+                    </div>
+
+                    <!-- Section 17 -->
+                    <div class="legal-section-block">
+                        <h3>17. Limitation of Liability</h3>
+                        <p>To the extent permitted by applicable law, <strong>Apex Marketing House</strong> will not be liable for indirect, incidental, special, consequential, or business-related losses arising from the use of our website or services, including loss of profits, revenue, customers, business opportunities, data, or anticipated savings.</p>
+                        <p>We are also not responsible for losses arising from factors outside our reasonable control, including third-party platform changes, advertising account restrictions, website failures, hosting issues, market conditions, customer behaviour, payment failures, supply problems, or other circumstances beyond our reasonable control.</p>
+                        <p>Nothing in these Terms is intended to exclude or limit liability that cannot lawfully be excluded or limited under applicable law.</p>
+                    </div>
+
+                    <!-- Section 18 -->
+                    <div class="legal-section-block">
+                        <h3>18. Force Majeure</h3>
+                        <p>We will not be considered in breach of these Terms where performance is delayed or prevented by circumstances beyond our reasonable control, such as major technical failures, internet or hosting outages, platform-wide disruptions, natural disasters, government actions, cyber incidents, war, civil unrest, or other events that could not reasonably be prevented or controlled.</p>
+                    </div>
+
+                    <!-- Section 19 -->
+                    <div class="legal-section-block">
+                        <h3>19. Changes to Services or Terms</h3>
+                        <p>We may modify, update, suspend, or discontinue parts of our website or services from time to time.</p>
+                        <p>We may also update these Terms to reflect changes in our business, services, technology, or applicable legal requirements. Updated Terms will be posted on this website. Your continued use of our website or services after the updated Terms become effective constitutes acceptance of the revised Terms, to the extent permitted by applicable law.</p>
+                    </div>
+
+                    <!-- Section 20 -->
+                    <div class="legal-section-block">
+                        <h3>20. No Professional or Legal Advice</h3>
+                        <p>Our marketing recommendations and services are provided for marketing and business-growth purposes. Unless expressly agreed otherwise, our services do not constitute legal, tax, accounting, financial, investment, or other regulated professional advice. Clients should obtain appropriate professional advice where required.</p>
+                    </div>
+
+                    <!-- Section 21 -->
+                    <div class="legal-section-block">
+                        <h3>21. Governing Law and Jurisdiction</h3>
+                        <p>These Terms shall be governed by and interpreted in accordance with the laws of <strong>India</strong>.</p>
+                        <p>Subject to applicable law, disputes arising from or relating to these Terms or our services shall be subject to the jurisdiction of the competent courts located in India.</p>
+                    </div>
+
+                    <!-- Section 22 -->
+                    <div class="legal-section-block">
+                        <h3>22. Severability</h3>
+                        <p>If any provision of these Terms is determined to be invalid, unlawful, or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.</p>
+                    </div>
+
+                    <!-- Section 23 -->
+                    <div class="legal-section-block">
+                        <h3>23. Contact Us</h3>
+                        <p>If you have questions regarding these Terms of Service or our services, you may contact us using the contact information provided on our website:</p>
+                        <ul>
+                            <li><strong>Agency:</strong> Apex Marketing House</li>
+                            <li><strong>Direct WhatsApp:</strong> <a href="https://wa.me/918804574048" target="_blank" rel="noopener noreferrer" style="color:var(--ig-magenta); font-weight:700;">+91 8804574048</a></li>
+                            <li><strong>Website:</strong> Apex Marketing House Web Portal</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-ack-banner">
+                        By using our website, submitting an enquiry, or engaging our services, you acknowledge that you have read, understood, and agreed to these Terms of Service.
+                    </div>
+                </div>
+
+                <div style="margin-top:2.5rem; text-align:center;">
+                    <button onclick="navigateBack()" class="btn-back-home" style="margin-bottom:0; font-size:1rem;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        Return to Previous Page
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==============================================================================
+         GLOBAL FLOATING ACTION: DIRECT WHATSAPP CHAT
+         ============================================================================== -->
+    <a href="https://wa.me/918804574048?text=Hello%20Apex%20Marketing%20House%2C%20I%20would%20like%20to%20discuss%20growing%20my%20business." target="_blank" rel="noopener noreferrer" class="whatsapp-floating-btn" aria-label="Chat directly on WhatsApp with Apex Marketing House">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.494 2 2 6.494 2 12.031c0 1.808.484 3.518 1.328 5.006L2 22l5.127-1.32c1.432.784 3.072 1.231 4.904 1.231 5.538 0 10.031-4.494 10.031-10.031S17.569 2 12.031 2zm5.871 14.205c-.244.685-1.42 1.31-1.956 1.393-.509.078-1.173.111-3.376-.8-2.816-1.164-4.636-4.048-4.776-4.234-.14-.186-1.141-1.517-1.141-2.893 0-1.376.721-2.054.978-2.333.256-.279.559-.349.745-.349.186 0 .372.002.535.01.174.009.407-.066.637.488.244.581.838 2.054.908 2.203.07.149.116.326.023.512-.093.186-.14.302-.279.465-.14.163-.294.364-.419.488-.14.14-.287.293-.124.572.163.279.725 1.194 1.554 1.932 1.066.949 1.964 1.243 2.243 1.382.279.14.442.116.605-.07.163-.186.7-814.884-1.093.186-.279.372-.233.628-.14.256.093 1.628.767 1.907.907.279.14.465.209.535.326.07.116.07.674-.174 1.359z"/></svg>
+        <span>Chat With Us</span>
+    </a>
+
+    <!-- ==============================================================================
+         GLOBAL FOOTER (With Social + Contact Icons & Names exactly matching user request)
+         ============================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                
+                <div class="footer-brand">
+                    <div style="display:flex; align-items:center; gap:0.65rem; margin-bottom:0.85rem;">
+                        <div class="brand-icon-box footer-brand-icon-box">
+                            <img src="logo-ig.png" alt="Apex Marketing House Logo" class="brand-logo-img">
+                        </div>
+                        <div class="footer-brand-title" style="margin-bottom:0;">Apex <span>Marketing House</span></div>
+                    </div>
+                    <p style="line-height:1.6; color:#94a3b8;">Strategy driven by measurable growth.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#ecommerce" onclick="navigateTo('ecommerce', 'core-ecommerce')">E-commerce / Dropshipping</a></li>
+                        <li><a href="#ecom-web" onclick="navigateTo('ecom-web', 'core-ecom-web')">Ecommerce Website Development</a></li>
+                        <li><a href="#seo" onclick="navigateTo('seo', 'core-seo')">SEO</a></li>
+                        <li><a href="#leadgen" onclick="navigateTo('leadgen', 'core-leadgen')">Lead Generation</a></li>
+                        <li><a href="#social" onclick="navigateTo('social', 'core-social')">Social Media</a></li>
+                        <li><a href="#performance" onclick="navigateTo('performance', 'core-performance')">Performance Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#who-we-are" onclick="navigateTo('home', 'who-we-are')">About</a></li>
+                        <li><a href="#how-we-work" onclick="navigateTo('home', 'how-we-work')">Process</a></li>
+                        <li><a href="#results" onclick="navigateTo('home', 'results')">Results</a></li>
+                        <li><a href="#why-us" onclick="navigateTo('home', 'why-us')">Why Us</a></li>
+                        <li><a href="#proposal-section" onclick="navigateTo('home', 'proposal-section')">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT & ENQUIRY SECTION: Text restored, email address removed, WhatsApp only redirectable -->
+                <div class="footer-col">
+                    <h4>Contact & Enquiry</h4>
+                    <ul class="footer-contact-list">
+                        <!-- Instagram (ACTIVE) -->
+                        <li>
+                            <a href="https://www.instagram.com/apexmarketinghouse/" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-item--ig" title="Follow on Instagram (@apexmarketinghouse)">
+                                <span class="footer-contact-icon footer-contact-icon--ig">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </span>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <!-- Facebook (REMAINS SAME) -->
+                        <li>
+                            <div class="footer-contact-item footer-contact-item--fb" title="Facebook">
+                                <span class="footer-contact-icon footer-contact-icon--fb">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </span>
+                                <span>Facebook</span>
+                            </div>
+                        </li>
+                        <!-- WhatsApp (ACTIVE & REDIRECTABLE) -->
+                        <li>
+                            <a href="https://wa.me/918804574048" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-item--wa" title="Chat on WhatsApp">
+                                <span class="footer-contact-icon footer-contact-icon--wa">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.494 2 2 6.494 2 12.031c0 1.808.484 3.518 1.328 5.006L2 22l5.127-1.32c1.432.784 3.072 1.231 4.904 1.231 5.538 0 10.031-4.494 10.031-10.031S17.569 2 12.031 2zm5.871 14.205c-.244.685-1.42 1.31-1.956 1.393-.509.078-1.173.111-3.376-.8-2.816-1.164-4.636-4.048-4.776-4.234-.14-.186-1.141-1.517-1.141-2.893 0-1.376.721-2.054.978-2.333.256-.279.559-.349.745-.349.186 0 .372.002.535.01.174.009.407-.066.637.488.244.581.838 2.054.908 2.203.07.149.116.326.023.512-.093.186-.14.302-.279.465-.14.163-.294.364-.419.488-.14.14-.287.293-.124.572.163.279.725 1.194 1.554 1.932 1.066.949 1.964 1.243 2.243 1.382.279.14.442.116.605-.07.163-.186.7-814.884-1.093.186-.279.372-.233.628-.14.256.093 1.628.767 1.907.907.279.14.465.209.535.326.07.116.07.674-.174 1.359z"/></svg>
+                                </span>
+                                <span>WhatsApp</span>
+                            </a>
+                        </li>
+                        <!-- LinkedIn (ACTIVE) -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/nirajkumarojha75630" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-contact-item--li" title="Connect on LinkedIn">
+                                <span class="footer-contact-icon footer-contact-icon--li">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </span>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <!-- Email (ACTIVE) -->
+                        <li>
+                            <a href="mailto:apexmarketinghouse@rediffmail.com" class="footer-contact-item footer-contact-item--mail" title="Email: apexmarketinghouse@rediffmail.com">
+                                <span class="footer-contact-icon footer-contact-icon--mail">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <span>Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Apex Marketing House. All rights reserved.</span>
+                <div style="display:flex; gap:1.5rem;">
+                    <a href="#privacy" id="footer-privacy-link" onclick="navigateTo('privacy', 'footer-privacy-link')" class="footer-legal-link">Privacy Policy</a>
+                    <a href="#terms" id="footer-terms-link" onclick="navigateTo('terms', 'footer-terms-link')" class="footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Interactive Client Script -->
+    <script src="app.js?v=3.7"></script>
+</body>
+</html>

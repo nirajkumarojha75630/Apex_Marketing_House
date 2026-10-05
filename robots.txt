@@ -1,0 +1,6 @@
+# robots.txt for Apex Marketing House
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://apexmarketinghouse.com/sitemap.xml
